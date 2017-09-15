@@ -1,0 +1,241 @@
+/*	
+	-----------------------------------------------------------------------------
+	Freie Universitaet Berlin:
+	Stilvorlagen fuer spezielle Elemente im Contentbereich
+
+	Autor: CeDiS, http://www.cedis.fu-berlin.de, cms@cedis.fu-berlin.de	
+	Datum: 28.02.2006
+	-----------------------------------------------------------------------------
+*/
+
+/* 	
+	-----------------------------------------------------------------------------
+	Stilvorlagen fuer spezielle Elemente im Contentbereich
+   	-----------------------------------------------------------------------------
+*/
+
+/*	Kontaktdaten und Anschrift des Institut  */
+
+.institution{
+	background-color: #E6ECF2; 
+	border: none;
+	margin: 16px 0 12px 0;
+	padding: 8px;
+}
+.institution td{
+	padding:2px 8px 2px 8px;
+}
+.clear{
+	clear: both;
+}
+.bIcons{
+	float:left;
+	margin:8px 4px 4px 0px;
+}
+.institution strong{
+	color: #333333;
+}
+.fuImgPosition{
+	margin:4px 0 4px 0;
+}
+
+
+/*
+	Layout fuCourseBody und fuCourseList -  Kurse und Kursuebersicht
+-------------------------------------------------------------------------------
+*/
+.kurs {
+	width:550px;
+	margin: 10px 0 8px 0;
+}
+
+.baseLabel{
+	font-weight:bold;
+	color:#666666;
+}
+
+/* 
+	Sitemap 
+------------------------------------------------------------------------------------*/
+.baseSitemap{
+	font-size:100%;
+	line-height: 140%;
+	font-weight: normal;
+	color:#333333;
+	list-style-image:none; 
+} 
+
+#baseContent ul li .baseSitemapLink {
+	font-size:100%;
+	line-height: 140%;
+	list-style-image: none; 
+} 
+
+.baseSitemapLevel_00 {
+	font-size:95%;
+	padding:2px 0 2px  0px;
+	font-weight: bold;
+	border-bottom: 1px solid #cccccc;
+	list-style-image: none;
+	margin: 0px 0 2px 0px;
+}
+
+.baseSitemapLevel_01 {
+	font-size:95%;
+	font-weight: normal;
+	margin: 2px 0 0px 24px;
+	padding:2px 0 2px 0;
+	border-bottom: 1px solid #cccccc;
+}
+
+.baseSitemapLevel_02 {
+	font-size:95%;
+	font-weight: normal;
+	margin:0 0 0 48px;
+	padding:2px 0 2px 0;
+}
+
+.baseSitemapLevel_03 {
+	font-size:95%;
+	font-weight: normal;
+	margin:0 0 0 72px;
+	padding:2px 0 2px 0;
+}
+
+.baseSitemapLevel_04 {
+	font-size:95%;
+	font-weight: normal;
+	margin:0 0 0 96px;
+	padding:2px 0 2px 0;
+}
+/* 
+	neue Sitemap (Tabelle)
+------------------------------------------------------------------------------------*/
+.baseSitemapLevel_00_a {
+	font-size:80%;
+	padding:2px 0 2px 5px;
+	font-weight: normal;
+	border-bottom: 1px solid #fff;
+	list-style-image: none;
+	margin: 0px 0 2px 0px;
+	width: 170px;
+	background-color: #dedede;
+}
+
+.baseSitemapLevel_01_a {
+	font-size:80%;
+	font-weight: normal;
+	margin: 0px 0 0px 24px;
+	padding:2px 0 2px 5px;
+	border-bottom: 1px solid #fff;
+	background-color: #f1f1f1;
+}
+
+.baseSitemapLevel_02_a {
+	font-size:80%;
+	font-weight: normal;
+	margin:0 0 0 48px;
+	padding:2px 0 2px 5px;
+	border-bottom: 1px solid #ffffff;
+	background-color: #f6f6f6;
+}
+.ohne {
+	border-bottom: none;
+	border-left: none;
+        background-color: transparent;
+}
+.leer_00_a {
+	border-bottom: none;
+	border-left: none;
+	background-color: #dedede;
+}
+.leer_01_a {
+	border-bottom: none;
+	border-left: none;
+	background-color: #f1f1f1;
+}
+.baseSitemapAbstand{
+margin:0px;
+line-height:70%;
+}
+
+/* 
+	Bildergalerie
+------------------------------------------------------------------------------------*/
+
+
+.floatleft
+{
+float: left;
+margin: 0 6px 6px 0px;
+border: 1px solid #e2e2e2;
+padding: 1px;
+}
+.imageContainer
+{ 
+display:block; 
+margin: 0px;
+width: 557px;
+clear: both;
+}
+
+.start a:link{
+color: #666666;
+}
+.start a:hover {
+text-decoration: none;
+color: #666666;
+}
+
+
+
+.uebersicht {
+	display:inline;
+        margin:0 0 0px 0;
+        float: left;
+	}
+.zurueck-galerie{
+	display:inline;
+        margin:0 0 0px 10px;
+       float: left;
+	}
+.vor-galerie{
+	display:inline;
+        margin:0 0 0px 10px;
+	float: left;
+}
+
+.grossbild
+{
+border: 1px solid #e2e2e2;
+padding: 3px;
+}
+
+hr.divider {
+	display: none;
+}
+
+.skip {
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	display: inline;
+}
+
+.info {
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	display: inline;
+}
+
+img {
+	border: none;
+}
+

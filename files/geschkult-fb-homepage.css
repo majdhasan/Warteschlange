@@ -1,0 +1,47 @@
+/* Spezifisches CSS fuer die Homepage des Fachbereichs */
+
+#baseIdentityHome {
+	position: absolute;
+	top: 116px;
+	left: 0;
+	width: 312px;
+	height: 160px;
+	margin: 0;
+	padding: 0;
+	background: #036;
+}
+
+#baseIdentityHome a img {
+	padding: 78px 0 0 22px;
+}
+
+#geschkultImages {
+	position: absolute;
+	left: 313px;
+	top: 116px;
+	height: 400px;
+	width: 467px;
+}
+
+#geschkultIntro {
+	position: absolute;
+	left: 0px;
+	top: 277px;
+	height: 128px;
+	width: 268px;
+	padding: 15px 22px 15px 22px;
+	background: #dcdcdc;
+	overflow: hidden;
+}
+
+#geschkultCopyright {
+	position: absolute;
+	left: 0px;
+	top: 436px;
+	height: 50px;
+	width: 268px;
+	padding: 15px 22px 15px 22px;
+	background: #f4f4f4;
+	overflow: hidden;
+}
+

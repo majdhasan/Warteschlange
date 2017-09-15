@@ -1,0 +1,9 @@
+# permanently redirect specific IP request for single page 
+RewriteEngine On
+RewriteBase /
+#RewriteCond %{REMOTE_HOST} 160\.45\.213\.197  [OR]
+#RewriteCond %{REMOTE_HOST} 130\.133\.48\.8
+#RewriteCond %{REMOTE_HOST} 160\.45\.213\.226  [OR]
+RewriteCond %{REMOTE_HOST} 160\.45\.212\.5
+RewriteCond %{REQUEST_URI} line/$
+RewriteRule .* http://verwaltung.geschkult.fu-berlin.de/line/stream/ [R=302,L] 

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+   "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<title>Stream</title>
+</head>
+
+    <body>
+<table align="center" border="0" width="100%"><tr><td align="center">
+
+<embed type="application/x-vlc-plugin" version="VideoLAN.VLCPlugin.2" 
+ width="720" height="405"
+id="vlc">
+</embed>
+<script language="Javascript">
+var vlc = document.getElementById("vlc");
+vlc.playlist.add("http://160.45.213.47:8080");
+vlc.playlist.play();
+vlc.video.deinterlace.enable("linear");
+</script>
+</td></tr></table>
+    </body>
+</html>
+
+

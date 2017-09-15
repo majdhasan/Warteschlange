@@ -1,0 +1,107 @@
+/*
+   ----------------------------------------------------------------------------
+   Freie Universitaet Berlin
+   Stilvorlagen zur Darstellung der Newsbereiche
+   
+   Autor: CeDiS, http://www.cedis.fu-berlin.de, cms@cedis.fu-berlin.de
+   Datum: 9.11.2005
+   ----------------------------------------------------------------------------
+*/
+
+/* 	
+	Layout fuNewsBox - Anzeige des rechten Newscontainers
+	--------------------------------------------------------------------------------------------------------------------------
+*/
+#baseContainerRight {
+	position: absolute;
+	padding:0px;
+	top:202px;
+	left:785px;
+	margin:0px;
+}
+.baseListBox {
+	position		: static;
+	font-family : Verdana, Arial, Helvica, sans-serif;
+	font-size :90%; 
+	line-height: 120%;
+	margin			: 0px 0px 15px 8px;
+	padding: 0;
+	width			: 186px;
+	background-color: #ffffff;
+	color:#333333;
+}
+.baseListBox h2{
+	font-weight: bold;
+	font-size: 110%;
+	color:#666666;
+	margin:4px 0 4px 0px;
+	border-bottom: 1px solid #cccccc;
+padding: 0 0 3px 0;
+}
+.baseListBox h3{
+	font-weight: normal;
+	color: #333333;
+	margin:6px 0 0px 0;
+	padding: 0 0 0 10px;
+	background-image: url(http://www.cms.fu-berlin.de/base/02/media/layout/pfeil_blau_liste.gif);
+	background-repeat:  no-repeat;
+	background-position:  0 4px;
+}
+.baseListBox h3 a:link{
+	color: #003399;
+	text-decoration: none;
+}
+.baseListBox h3 a:visited{
+	color: #336699;
+	text-decoration: none;
+}
+.baseListBox h3 a:hover{
+	color: #003399;
+	text-decoration: underline;
+}
+.baseListItemDate{
+	font-size: 90%;
+	color:#666666;
+	font-weight: normal;
+	margin: 2px 0 10px 0;
+	padding: 0 0 0 10px;
+}
+
+.baseListItemAbstract {
+	color:#333333;
+	margin:4px 0px 2px 0;
+padding:0 0 0 10px;
+}
+.baseListItemAbstract p {
+	color:#333333;
+	margin:-4px 0px -3px 0;
+}
+
+
+
+.baseListBox ul{
+	margin:0px 20px 0px 12px;
+	padding:4px 0 4px 0px;
+	width			: 186px;
+}
+
+.baseListBox ul li{
+	list-style-image: url(http://www.cms.fu-berlin.de/base/02/media/layout/rechteck_gr_liste.gif); 
+	margin: 0;
+	padding: 0px;
+	line-height:140%;
+}
+*html .baseListBox ul li{ /* fuer IE  */
+   list-style-image: url(http://www.cms.fu-berlin.de/base/02/media/layout/rechteck_gr_ie.gif); 
+}
+
+.baseListItemTermin {
+	font-weight: bold;
+	margin-top: 2px;
+       padding:0 0 0 10px;
+color: #666666;
+}
+
+.weiter{
+padding:0 0 0 10px;
+}

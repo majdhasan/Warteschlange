@@ -1,0 +1,199 @@
+/*
+   -----------------------------------------------------------------------------
+   Freie Universitaet Berlin:
+   Allgemeine Stilvorlagen
+   
+   Autor: CeDiS, http://www.cedis.fu-berlin.de, cms@cedis.fu-berlin.de
+   Datum: 09.11.2005
+   -----------------------------------------------------------------------------
+   - Farben -
+   Hintergrund Seite: #ffffff 
+   Fliesstext: #333333 (dunkelgrau)
+   h1 h2 #333333 (dunkelgrau)
+   h3 #666666 (mittelgrau)
+   h4 #cc0000 (rot)
+   h5 #333333, hintergrundfarbe: #f4f4f4 (hellgrau)
+   h6 #666666 (mittelgrau)
+   FU Standard Blau im Web: #003366
+   FU Standard Gruen im Web: #99cc00
+   -----------------------------------------------------------------------------
+*/
+
+/* Allgemeine Stilanweisungen
+   -----------------------------------------------------------------------------
+*/
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family : Verdana, Arial, Helvica, sans-serif;
+	font-size :70%; 
+	line-height: 140%;
+	color:#333333;
+	background: #ffffff;
+}
+h1 {
+	font-size:130%;
+	line-height: 140%;
+	font-weight: bold;
+	margin: 0 0 4px 0;
+	color: #333333;
+}
+h2 {
+	font-size:100%;
+	line-height: 140%;
+	font-weight: bold;
+	margin: 12px 0px 4px 0px;
+	color: #333333;
+}
+h3 {
+	font-size:100%;
+	line-height: 140%;
+	font-weight: bold;
+	margin: 12px 0 4px 0px;
+	color:#666666;
+}
+h4 {
+	font-size:100%;
+	line-height: 140%;
+	font-weight: normal;
+	margin: 4px 0 4px 0;
+	color:#cc0000;
+}
+
+h5 {
+	font-size:100%;
+	line-height: 140%;
+	font-weight: normal;
+	margin:4px 0 4px 0;
+	padding: 2px 2px 4px 2px;
+	background-color:#f4f4f4;
+	color: #333333;
+	width: 99%;
+}
+h6 {
+	font-size:90%;
+	line-height: 120%;
+	font-weight: normal;
+    color: #666666;
+	margin: 4px 0 4px 0;
+}
+a:link{
+	color:#003399;
+	text-decoration: none;
+	background-color: transparent;
+}
+a:visited{
+	color:#336699;
+	text-decoration: none;
+}
+a:hover{
+	color:#003399;
+	text-decoration: underline;
+	background-color: transparent;
+}
+a:focus{
+	border: none;
+	color:#003399;
+	text-decoration: underline;
+}
+p {
+	color:#333333;
+	margin: 0;
+	padding-top: 4px;
+	padding-bottom:4px;
+}
+p strong, p b, td strong, td b{
+	color: #666666;
+}
+a:link strong,  a:hover strong,  a:link b, a:hover b,  a:visited strong,  a:visited  b,
+strong  a:link, strong  a:hover ,  b a:link, b a:hover,  strong a:visited,   b a:visited{
+color: #003399;
+}
+table, tr, td{
+	font-size: 100%;
+	line-height: 140%;
+	color:#333333;
+}
+table{
+	margin: 10px 0 0 0;
+	border-spacing: 0;
+	border-color: #d1d1d1;
+	border-collapse: collapse;
+}
+
+td{
+	border-spacing: 0;
+}
+th{
+	background-color: #f4f4f4;
+	font-weight: bold;
+	border-spacing: 0;
+}
+ul, ol, li {
+	font-size: 100%;
+	line-height: 140%;
+	list-style-type: none;
+}
+hr{
+	border:none;
+	border-bottom: 1px #999999 solid;
+	height: 1px;
+	margin:0px;
+}
+blockquote {
+	left: 0px;
+	margin: 0 0 0 14px
+}
+dl, dt, dd {
+	font-size: 100%;
+	line-height: 140%;
+	list-style-type: none;
+}
+dl{
+	margin:0px 20px 0px 0px;
+	padding:4px 0 4px 0px;
+}
+dt{
+   	margin: 0px;
+	padding: 0px;
+	line-height:130%;
+	font-weight: bold;
+	color: #666666;
+}
+dd{
+	margin: 0;
+	padding: 0px;
+}
+
+
+hr.divider {
+	display: none;
+}
+
+.skip {
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	display: inline;
+}
+
+.info {
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	display: inline;
+}
+
+img {
+	border: none;
+}
+
+

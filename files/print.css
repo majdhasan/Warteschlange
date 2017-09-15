@@ -1,0 +1,406 @@
+/*	
+   ----------------------------------------------------------------------------
+   Freie Universitaet Berlin
+   Design: Druckvorschau
+   Stilvorlagen fuer die Druckvorschau im Browser und die Ausgabe auf einen Drucker
+	
+   Autor: CeDiS, http://www.cedis.fu-berlin.de, cms@cedis.fu-berlin.de
+   Datum: 28.02.2005
+   ----------------------------------------------------------------------------
+   - Verknuepfte Dateien -
+   Listenpunkte im Content: ../media/layout/rechteck_gr_ie.gif	
+   ----------------------------------------------------------------------------
+*/
+
+/*
+   ----------------------------------------------------------------------------
+   Stilvorlagen fuer die Druckvorschau im Browser und die Ausgabe auf einen Drucker
+   ----------------------------------------------------------------------------
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family : "NexusSans-Regular", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	line-height: 140%;
+	color: #333;
+	background-color: #fff;
+	background-image: none;
+}
+
+h1 {
+	font-size: 11pt;
+	line-height: 140%;
+	font-weight: bold;
+	margin: 0 0 4px 0;
+	color: #333;
+}
+
+h2 {
+	font-size: 9pt;
+	line-height: 140%;
+	font-weight: bold;
+	margin: 12px 0px 4px 0px;
+	color: #333;
+}
+
+h3 {
+	font-size: 9pt;
+	line-height: 140%;
+	font-weight: bold;
+	margin: 12px 0 4px 0px;
+	color:#666;
+}
+
+h4 {
+	font-size: 9pt;
+	line-height: 140%;
+	font-weight: normal;
+	margin: 4px 0 4px 0;
+	color: #666;
+}
+
+h5 {
+	font-size: 9pt;
+	line-height: 140%;
+	font-weight: normal;
+	margin:4px 0 4px 0;
+	padding: 2px 2px 4px 2px;
+	background-color: #f4f4f4;
+	color: #333;
+	width: 99%;
+}
+
+h6 {
+	font-size: 8pt;
+	line-height: 120%;
+	font-weight: normal;
+    color: #666;
+	margin: 4px 0 4px 0;
+}
+
+a:link {
+	color: #333;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+a:visited {
+	color: #333;
+	text-decoration: underline;
+}
+
+p {
+	color: #333;
+	margin: 0;
+	padding-top: 4px;
+	padding-bottom:4px;
+}
+
+p strong, p b, td strong, td b {
+	color: #666;
+}
+
+a:link strong,  a:hover strong,  a:link b, a:hover b,  a:visited strong,  a:visited  b,
+strong  a:link, strong  a:hover ,  b a:link, b a:hover,  strong a:visited,   b a:visited {
+	color: #333;
+	text-decoration: underline;
+}
+
+table, tr, td {
+	font-size: 9pt;
+	line-height: 140%;
+	color: #333;
+}
+
+table {
+	margin: 10px 0 0 0;
+	border-spacing: 0;
+	border-color: #d1d1d1;
+	border-collapse: collapse;
+}
+
+td {
+	border-spacing: 0;
+}
+
+th {
+	background-color: #f4f4f4;
+	font-weight: bold;
+	border-spacing: 0;
+}
+
+ol {
+	font-size: 9pt;
+	line-height: 140%;
+	list-style-type: none;
+}
+
+ul, li {
+	font-size: 9pt;
+	line-height: 140%;
+	list-style-type: square;
+}
+
+hr {
+	border:none;
+	border-bottom: 1px #999 solid;
+	height: 1px;
+	margin:0px;
+}
+
+blockquote {
+	left: 0px;
+	margin: 0 0 0 14px
+}
+
+dl, dt, dd {
+	font-size: 9pt;
+	line-height: 140%;
+	list-style-type: none;
+}
+
+dl {
+	margin:0px 20px 0px 0px;
+	padding:4px 0 4px 0px;
+}
+
+dt {
+   	margin: 0 0 0 0px;
+	padding: 0px;
+	line-height:130%;
+	font-weight: bold;
+	color: #666;
+}
+
+dd {
+	margin: 0;
+	padding: 0px;
+}
+
+#wrapper {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	text-align: left; /* Aufheben von IE_quirks im BODY */
+	float: none !important;
+	width: auto;
+}
+
+#printlogo {
+	position: absolute;
+	top: 0;
+	display: inline;
+	margin: 0 0 20px 0;
+	padding: 0;
+	height: 73px;
+}
+*html #printlogo { /* Nur fuer IE */
+	display: block;
+}
+
+#baseHeader {
+	display:none;
+}
+
+#baseNavigationButtons,
+#baseFBHome,
+#geschkultImages,
+#baseIdentityHome,
+#oasImage1,
+#oasImage2,
+#oasImage3,
+#iranistikImageHome,
+#iranistikNavigationHome,
+#turkologieImage1,
+#turkologieImage2,
+#turkologieImage3 {
+	display: none;
+}
+
+#baseHeaderNavigation {
+	display:none;
+}
+
+#NavigationInfo {
+	display:none;
+}
+
+#baseNavigationTop {
+	display: none;
+}
+
+#browsing3 {
+	display: none;
+}
+
+#DropDownNavi {
+	display: none;
+}
+
+#NavigationTabs {
+	display:none;
+}
+
+#baseNavigationContainerGeschkult {
+	display:none;
+} 
+
+#baseHeaderSearch {
+	display: none;
+}
+
+#baseQuickLinks {
+	display: none;
+}
+
+#baseIcons {
+	display:none;
+}
+
+#baseContent, #geschkultIntro {
+	display: block;
+	top: 0px;
+	margin: 0px 0 0 5%;
+	padding: 100px 0px 20px 0px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	width: auto;
+}
+*html #baseContent {
+	top: 10px;
+	padding: 0 0 20px 0;
+	margin: 100px 0 0 5%;
+	}
+
+#baseContainerNavigationToRoot {
+	display:none;
+}
+
+#baseContainerFooter, #geschkultCopyright, #oasCopyright, #iranistikCopyrightHome, #turkologieCopyright {
+	position: relative;
+	color: #666;
+	text-align: left;
+	font-size: 8pt;
+	height: 20px; 
+	margin: 0 5% 0 5%;
+	padding: 10px 0 0 0 ;
+	width: 90%;
+	border-top: 4px solid #666;
+}
+
+#baseContainerFooter div.left, #geschkultCopyright div.left {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 360px;
+	text-align: left;
+}
+
+#baseContainerFooter div.right, #geschkultCopyright div.right {
+	position: absolute;
+	top: 8px;
+	right: 0;
+	text-align: right;
+}
+
+#baseContainerRight {
+	display:none;
+}
+
+.baseHeaderLogo {
+	display:none;
+}
+
+.baseHeaderBild {
+	display:none;
+}
+
+#baseIdentity {
+	display:none;
+}
+
+#baseContent ul {
+	margin:0px 20px 0px 12px;
+	padding:4px 0 4px 0px;
+}
+
+#baseContent ol {
+	margin:4px 20px 4px 12px;
+	padding:4px 0 4px 0px;
+}
+
+#baseContent ul li {
+	list-style: square;
+	margin: 0;
+	padding: 0px;
+	line-height:140%;
+}
+*html #baseContent ul li {
+	list-style-image: url(../media/layout/rechteck_gr_ie.gif); 
+}
+
+#baseContent ul li a:link {
+	text-decoration: underline;
+	color: #333;
+}
+
+#baseContent ul li a:visited {
+	text-decoration: underline;
+	color: #333;
+}
+
+#baseContainerFooter a {
+	color: #666;
+}
+
+#baseContainerFooter a:visited {
+	color: #666;
+}
+
+#basePrintPreview {
+	display: none;
+}
+
+.baseLinkPrint {
+	color: #333;
+}
+
+.quickLinksIcon {
+	display: none;
+}
+
+hr.divider {
+	display: none;
+}
+
+.skip {
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	display: inline;
+}
+
+.info {
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	display: inline;
+}
+
+img {
+	border: none;
+}
+

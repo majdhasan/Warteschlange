@@ -1,0 +1,1829 @@
+
+/*
+
+   ----------------------------------------------------------------------------
+
+   Freie Universitaet Berlin
+
+   Design: Fachbereich Geschichts- und Kulturwissenschaften
+
+
+
+   Autor: CeDiS, http://www.cedis.fu-berlin.de, cms@cedis.fu-berlin.de
+
+   Datum: 20.10.2006
+
+   ----------------------------------------------------------------------------
+
+    2008-02-21
+
+         neue Suche, #baseHeaderSearch angepasst
+
+
+
+*/
+
+
+
+/*
+
+   ----------------------------------------------------------------------------
+
+   Stilvorlagen entsprechend dem Seitentyp und der Layoutvariante
+
+   ----------------------------------------------------------------------------
+
+*/
+
+
+
+body {
+
+      background: #fff;
+
+}
+
+/* Info:
+
+   Das Hintergrundbild entspricht der Hoehe des Identitaetsbereichs und enthaelt die gruene Linie und den grauen Hintergrundstreifen.
+
+   ----------------------------------------------------------------------------
+
+*/
+
+
+
+
+
+#wrapper {
+
+      position: relative;
+
+      margin: 0 auto 0 0;
+
+      /*width: 780px;*/
+
+      width: 90%;
+
+      text-align: left; /* Aufheben von IE_quirks im BODY */
+
+}
+
+*html #wrapper { /* fuer IE */
+
+      margin: 0;
+
+}
+
+/* Info:
+
+   Der wrapper dient als umspannender Container.
+
+   Er fasst Elemente und Bereiche zusammen, welche im Verhaeltnis zur Breite, Hoehe und Position des wrappers mittels CSS absolut positioniert werden.
+
+   ----------------------------------------------------------------------------
+
+*/
+
+
+
+
+
+#printlogo { /* dieses div wird nur in der Druckvorschau angezeigt */
+
+      display:none;
+
+}
+
+/* Info:
+
+   Das Printlogo wird nur in der Druckvorschau (separates Popup) und bei der Ausgabe auf einem Drucker verwendet/eingeblendet.
+
+   ----------------------------------------------------------------------------
+
+*/
+
+
+
+
+
+/*    Header  */
+
+
+
+#baseHeader {
+
+      top: 0;
+
+      margin: 0 0 0 12px;
+
+      padding: 0;
+
+      height: 2px;
+
+}
+
+
+
+
+
+/*    Identitaetsbereich  */
+
+
+
+#baseIdentity {
+
+
+      top: 0px;
+
+      left: 0;
+
+      width: 100%;
+
+      height: 30px;
+
+      margin: 0;
+
+      padding: 0;
+
+      background: #f4f4f4;
+
+}
+
+
+
+#baseIdentity a img {
+
+      padding: 0;
+
+}
+
+
+
+*html #baseIdentity {
+
+      top: 2px;
+
+}
+
+
+
+/* Layout fuHeaderSearch */
+
+
+
+#baseHeaderSearch {
+
+      position: absolute;
+
+      top: 114px;
+
+      left: 788px;
+
+      margin: 0;
+
+      padding: 5px 0 0 0;
+
+      font-size: 95%;
+
+      color: #666;
+
+      width: 173px;
+
+      height: 20px;
+
+}
+
+
+
+#baseHeaderSearch .baseInputSearch { /*input */
+
+      margin:0 10px 0 10px;
+
+      padding:0 0 0 3px;
+
+      height: 15px;
+
+      width: 120px;
+
+      background-color: #ffffff;
+
+      border:1px solid #999999;
+
+      font-size: 95%;
+
+}
+
+
+
+#baseHeaderSearch .buttonText {
+
+      border:medium none;
+
+      left:148px;
+
+      position:absolute;
+
+}
+
+
+
+
+
+/* Wrapper fuer die linke Hauptnavigation und den Content */
+
+
+
+#NaviContentWrapper {
+
+
+
+      height: 100%;
+
+}
+
+
+
+
+
+/*    Inhaltsbereich  */
+
+
+
+#baseContent {
+
+      float: left;
+
+      /*margin: 0 0 0 196px;*/
+
+      width: 772px;
+
+      padding: 12px 20px 20px 12px;
+
+      background-color: transparent;  /* fuer benutzerdefinierte Bildschirmeinstellungen */
+
+      min-height: 370px; /* regelt variabel die Mindesthoehe des Inhaltsbereichs */
+
+      overflow: visible;
+
+}
+
+*html #baseContent { /* nur fuer IE 5.5 - 6.x */
+
+      height: 370px;  /* regelt variabel die Mindesthoehe des Inhaltsbereichs */
+
+      padding: 10px 20px 20px 12px;
+
+      overflow-x: visible;
+
+      overflow-y: visible;
+
+}
+
+
+
+
+
+/*    Fussleiste  */
+
+
+
+#baseContainerFooter {
+
+      position: relative;
+
+      color: #666;
+
+      padding: 0;
+
+      text-align: left;
+
+      font-size: 85%;
+
+      line-height: 130%;
+
+      border-top: 1px solid #ccc;
+
+      height: 30px;
+
+}
+
+
+
+/*  Copyright */
+
+
+
+#baseContainerFooter div.left {
+
+      position: absolute;
+
+      top: 8px;
+
+      left: 22px;
+
+      width: 500px;
+
+      text-align: left;
+
+      padding-bottom: 10px;
+
+}
+
+
+
+/*  Datum  */
+
+
+
+#baseContainerFooter div.right {
+
+      position: absolute;
+
+      top: 8px;
+
+      left: 540px;
+
+      width: 230px;
+
+      text-align: right;
+
+      padding-bottom: 10px;
+
+}
+
+
+
+/*
+
+      -----------------------------------------------------------------------------
+
+      Spezielle Stilvorlagen
+
+      -----------------------------------------------------------------------------
+
+*/
+
+
+
+/*    Header  */
+
+
+
+.baseHeaderLogo {
+
+      margin: 6px 0 0 6px;
+
+}
+
+
+
+#baseHeaderNavigation {
+
+      position: absolute;
+
+      top: 31px;
+
+      right: 0;
+
+      margin: 0;
+
+      padding: 0;
+
+      font-size: 90%;
+
+      border-right: 1px solid #666;
+
+
+
+}
+
+
+
+/*    Links im div baseHeaderNavigation (Servicenavigation)  */
+
+
+
+#baseHeaderNavigation ul {
+
+      margin: 0;
+
+      padding: 0;
+
+      display: inline;
+
+}
+
+
+
+#baseHeaderNavigation ul li {
+
+      margin: 0;
+
+      padding: 1px 3px 1px 3px;
+
+      border-left: 1px solid #666;
+
+      list-style: none;
+
+      display: inline;
+
+      color: #000;
+
+}
+
+
+
+#baseHeaderNavigation ul li a {
+
+      color: #666;
+
+      text-decoration: none;
+
+}
+
+
+
+#baseHeaderNavigation ul li a:hover{
+
+      color: #000000;
+
+      text-decoration: none;
+
+}
+
+
+
+#baseHeaderNavigation ul li a:visited {
+
+      color: #666;
+
+      text-decoration: none;
+
+}
+
+
+
+#baseHeaderNavigation .langlnk { /* Der Punkt Englisch in der Servicenavigation ist vom Tonwert abgeschwaecht, wenn keine englische Version des Web-Auftritts existiert. */
+
+      color: #ccc;
+
+}
+
+
+
+
+
+/*    Identitaet  */
+
+
+
+.baseIdentityBild{
+
+      position: absolute;
+
+      top: 0px;
+
+      left: 410px;
+
+      margin: 0;
+
+      padding: 0 1px 0 1px;
+
+}
+
+
+
+*html .baseIdentityBild {
+
+      top: 2px;
+
+}
+
+
+
+/* Linker Navigationsbereich  */
+
+
+
+#baseNavigationContainerGeschkult {
+
+      float: left;
+
+      top: 196px;
+
+      left: 0;
+
+      padding: 40px 0 40px 0;
+
+      width: 196px;
+
+      font-size: 100%;
+
+      line-height: 120%;
+
+      overflow: hidden;
+
+}
+
+
+
+#baseNavigationContainerGeschkult ul {
+
+      width: 177px;
+
+      margin: 0;
+
+      padding: 0;
+
+      list-style: none;
+
+}
+
+#baseNavigationContainerGeschkult ul li {
+
+      margin: 0;
+
+      padding: 0;
+
+      font-size: 95%;
+
+      line-height: 1.5em;
+
+}
+
+#baseNavigationContainerGeschkult ul li a:hover {
+
+      color: #000;
+
+      border-bottom: 1px solid #ccc;
+
+      background-color: #ececec;
+
+}
+
+#baseNavigationContainerGeschkult ul li a.aktiv {
+
+      color: #000;
+
+      border-bottom: 1px solid #ccc;
+
+}
+
+
+
+/* Erste Ebene */
+
+
+
+#baseNavigationContainerGeschkult ul li a {
+
+      display:block;
+
+      color: #666;
+
+      text-decoration: none;
+
+      width: 98%;
+
+      padding: 1px 1px 1px 22px;
+
+      border-bottom: 1px solid #ccc;
+
+}
+
+#baseNavigationContainerGeschkult ul li .aktiv {
+
+      display:block;
+
+      color: #000;
+
+      width: 98%;
+
+      padding: 1px 1px 1px 22px;
+
+      background-color: #ececec;
+
+      border-bottom: 1px solid #ccc;
+
+}
+
+
+
+/* Zweite Ebene */
+
+#baseNavigationContainerGeschkult ul li li {
+
+      font-size:100%;
+
+}
+
+#baseNavigationContainerGeschkult ul li li a {
+
+      width: 165px;
+
+      padding: 1px 1px 2px 30px;
+
+}
+
+#baseNavigationContainerGeschkult ul li li .aktiv {
+
+      width: 165px;
+
+      padding: 1px 1px 2px 30px;
+
+      color: #000;
+
+      background-color: #f8f8f8;
+
+
+
+}
+
+/* Dritte Ebene*/
+
+#baseNavigationContainerGeschkult ul li li li a {
+
+      width: 151px;
+
+      padding: 1px 1px 1px 44px;
+
+      background-position: 18px 6px;
+
+}
+
+#baseNavigationContainerGeschkult ul li li li .aktiv {
+
+      width: 151px;
+
+      padding: 1px 1px 1px 44px;
+
+      background-position: 18px 6px;
+
+      color: #000;
+
+      background-color: #f8f8f8;
+
+
+
+}
+
+
+
+/* Linker Navigationsbereich im Frameset */
+
+
+
+#baseNavigationFrameGeschkult {
+
+      float: left;
+
+      top: 196px;
+
+      left: 0;
+
+      padding: 40px 0 40px 0;
+
+      width: 196px;
+
+      font-size: 100%;
+
+      line-height: 120%;
+
+      overflow: hidden;
+
+}
+
+
+
+#baseNavigationFrameGeschkult ul {
+
+      width: 177px;
+
+      margin: 0;
+
+      padding: 0;
+
+      list-style: none;
+
+}
+
+#baseNavigationFrameGeschkult ul li {
+
+      margin: 0;
+
+      padding: 0;
+
+      font-size: 95%;
+
+      line-height: 1.5em;
+
+}
+
+#baseNavigationFrameGeschkult ul li a:hover {
+
+      color: #000;
+
+      border-bottom: 1px solid #ccc;
+
+      background-color: #ececec;
+
+}
+
+#baseNavigationFrameGeschkult ul li a.aktiv {
+
+      color: #000;
+
+      border-bottom: 1px solid #ccc;
+
+}
+
+
+
+/* Erste Ebene */
+
+
+
+#baseNavigationFrameGeschkult ul li a {
+
+      display:block;
+
+      color: #666;
+
+      text-decoration: none;
+
+      width: 98%;
+
+      padding: 1px 1px 1px 22px;
+
+      border-bottom: 1px solid #ccc;
+
+}
+
+#baseNavigationFrameGeschkult ul li .aktiv {
+
+      display:block;
+
+      color: #000;
+
+      width: 98%;
+
+      padding: 1px 1px 1px 22px;
+
+      background-color: #ececec;
+
+      border-bottom: 1px solid #ccc;
+
+}
+
+
+
+/* Zweite Ebene */
+
+#baseNavigationFrameGeschkult ul li li {
+
+      font-size:100%;
+
+}
+
+#baseNavigationFrameGeschkult ul li li a {
+
+      width: 165px;
+
+      padding: 1px 1px 2px 30px;
+
+}
+
+#baseNavigationFrameGeschkult ul li li .aktiv {
+
+      width: 165px;
+
+      padding: 1px 1px 2px 30px;
+
+      color: #000;
+
+      background-color: #f8f8f8;
+
+
+
+}
+
+/* Dritte Ebene*/
+
+#baseNavigationFrameGeschkult ul li li li a {
+
+      width: 151px;
+
+      padding: 1px 1px 1px 44px;
+
+      background-position: 18px 6px;
+
+}
+
+#baseNavigationFrameGeschkult ul li li li .aktiv {
+
+      width: 151px;
+
+      padding: 1px 1px 1px 44px;
+
+      background-position: 18px 6px;
+
+      color: #000;
+
+      background-color: #f8f8f8;
+
+
+
+}
+
+
+
+
+
+/*    Contentbereich  */
+
+
+
+/*    Mikronavigation (Navigations-Pfad)  */
+
+
+
+#baseContainerNavigationToRoot {
+
+      font-size: 90%;
+
+      line-height: 120%;
+
+      width: auto;
+
+      padding: 0 20px 0 0;
+
+      margin: 0 0 15px 0;
+
+}
+
+
+
+/*  Links im Navigationspfad  */
+
+
+
+.baseNavigationToRoot {
+
+      color:#000;
+
+}
+
+
+
+.baseNavigationToRoot a {
+
+      color:#666;
+
+}
+
+
+
+.baseNavigationToRoot a:hover {
+
+      color: #000;
+
+      text-decoration: none;
+
+}
+
+
+
+.baseNavigationToRoot a:visited {
+
+      color:#666;
+
+      text-decoration: none;
+
+}
+
+
+
+
+
+/*
+
+      Symbole fuer Druck und Druckvorschau
+
+      -----------------------------------------------------------------------------
+
+*/
+
+
+
+#baseIcons {
+
+      float: right;
+
+      margin: -2px 0px 10px 40px;
+
+      padding: 0px;
+
+}
+
+*html #baseIcons { /* fuer IE  */
+
+      margin: 0px 0px 10px 40px;
+
+}
+
+
+
+#basePrintPreview {
+
+      display:none;
+
+}
+
+/* Info:
+
+   Diese Symbole werden nur in der Druckvorschau (separates Popup) und bei der Ausgabe auf einem Drucker verwendet/eingeblendet.
+
+   ----------------------------------------------------------------------------
+
+*/
+
+
+
+
+
+/*    Standardlisten und numerierte Listen im Contentbereich  */
+
+
+
+#baseContent ul {
+
+      margin: 0px 20px 0px 12px;
+
+      padding: 4px 0 4px 0px;
+
+}
+
+
+
+#baseContent ol {
+
+      margin: 4px 20px 4px 12px;
+
+      padding: 4px 0 4px  0px;
+
+}
+
+
+
+#baseContent ol li {
+
+      list-style-type: decimal;
+
+      margin: 0 0 0 20px;
+
+      padding: 0px;
+
+}
+
+*html #baseContent ol li { /* fuer IE  */
+
+      margin: 0 0 0 25px;
+
+}
+
+
+
+#baseContent ul li {
+
+      margin: 0;
+
+      padding: 0px;
+
+      line-height: 140%;
+
+}
+
+*html #baseContent ul li { /* fuer IE  */
+
+
+
+}
+
+
+
+
+
+/*    News - Anzeige der Vor- und Zuruecklinks  */
+
+
+
+.baseNewsNavigationPrevNext {
+
+      margin: 20px 0 0px 0;
+
+      padding: 0;
+
+}
+
+
+
+#vor {
+
+      float: right;
+
+}
+
+
+
+#zurueck {
+
+      float: left;
+
+}
+
+
+
+
+
+/*    Fussleiste  */
+
+
+
+/*    Links im div baseContainerFooter  */
+
+
+
+#baseContainerFooter a:link {
+
+      color: #666;
+
+      text-decoration: none;
+
+}
+
+
+
+#baseContainerFooter a:hover {
+
+      color: #000;
+
+      text-decoration: none;
+
+}
+
+
+
+#baseContainerFooter a:visited {
+
+      color: #666;
+
+      text-decoration: none;
+
+}
+
+
+
+
+
+/*    Kontaktdaten und Anschrift des Institut  */
+
+
+
+.institution {
+
+      background-color: #E6ECF2;
+
+      border: none;
+
+      margin: 16px 0 12px 0;
+
+      padding: 8px;
+
+}
+
+
+
+.institution td {
+
+      padding: 2px 8px 2px 8px;
+
+}
+
+
+
+.clear {
+
+      clear: both;
+
+}
+
+
+
+.bIcons {
+
+      float:left;
+
+      margin:8px 4px 4px 0px;
+
+}
+
+
+
+.institution strong{
+
+      color: #333;
+
+}
+
+
+
+.fuImgPosition {
+
+      margin: 4px 0 4px 0;
+
+}
+
+
+
+
+
+/* zum Positionieren von Bildern (Umfliessen) im Contentbereich */
+
+
+
+.imgLeft {
+
+      float: left;
+
+      margin: 10px 20px 10px 0;
+
+}
+
+
+
+.imgRight {
+
+      float: right;
+
+      margin: 10px 0 10px 20px;
+
+}
+
+
+
+
+
+/*
+
+      News, Container rechts vom Contentbereich
+
+      --------------------------------------------------------------------------------------------------------------------------
+
+*/
+
+
+
+#baseContainerRight {
+
+      position: absolute;
+
+      padding:0px;
+
+      top:202px;
+
+      left:797px;
+
+      margin:0px;
+
+}
+
+
+
+.baseListBox {
+
+      position: static;
+
+      font-family : Verdana, Arial, Helvetica, sans-serif;
+
+      font-size :90%;
+
+      line-height: 120%;
+
+      margin: 0 0 15px 8px;
+
+      padding: 0;
+
+      width: 186px;
+
+      background-color: #fff;
+
+      color: #333;
+
+}
+
+
+
+.baseListBox h2 {
+
+      font-weight: bold;
+
+      font-size: 110%;
+
+      color: #666;
+
+      margin: 4px 0 4px 0px;
+
+      border-bottom: 1px solid #ccc;
+
+      padding: 0 0 3px 0;
+
+}
+
+
+
+.baseListBox h3 {
+
+      font-weight: normal;
+
+      color: #333;
+
+      margin: 6px 0 0px 0;
+
+      padding: 0 0 0 10px;
+
+      background-repeat: no-repeat;
+
+      background-position: 0 4px;
+
+}
+
+
+
+.baseListBox h3 a:link {
+
+      color: #003399;
+
+      text-decoration: none;
+
+}
+
+
+
+.baseListBox h3 a:visited {
+
+      color: #369;
+
+      text-decoration: none;
+
+}
+
+
+
+.baseListBox h3 a:hover {
+
+      color: #039;
+
+      text-decoration: underline;
+
+}
+
+
+
+.baseListItemDate {
+
+      font-size: 90%;
+
+      color: #666;
+
+      font-weight: normal;
+
+      margin: 2px 0 10px 0;
+
+      padding: 0 0 0 10px;
+
+}
+
+
+
+.baseListItemAbstract {
+
+      color: #333;
+
+      margin: 4px 0px 2px 0;
+
+      padding: 0 0 0 10px;
+
+}
+
+
+
+.baseListItemAbstract p {
+
+      color: #333;
+
+      margin: -4px 0px -3px 0;
+
+}
+
+
+
+.baseListBox ul {
+
+      margin: 0px 20px 0px 12px;
+
+      padding: 4px 0 4px 0px;
+
+      width: 186px;
+
+}
+
+
+
+.baseListBox ul li{
+
+      margin: 0;
+
+      padding: 0px;
+
+      line-height: 140%;
+
+}
+
+*html .baseListBox ul li { /* fuer IE  */
+
+}
+
+
+
+.baseListItemTermin {
+
+      font-weight: bold;
+
+      margin-top: 2px;
+
+    padding: 0 0 0 10px;
+
+      color: #666;
+
+}
+
+
+
+
+
+/*  QuickLinks  */
+
+
+
+#baseQuickLinks /*form*/ {
+
+      position: absolute;
+
+      top: 168px;
+
+      left: 788px;
+
+      margin: 0;
+
+      padding: 0;
+
+      font-size: 95%;
+
+      color: #666;
+
+}
+
+
+
+#baseQuickLinks .quick {
+
+      font-size: 95%;
+
+      margin: 0px 0px 0 10px;
+
+      width:124px;
+
+}
+
+
+
+.quickLinksIcon {
+
+      position: absolute;
+
+      top: 169px;
+
+      left: 937px;
+
+      margin: 0;
+
+      padding: 0;
+
+}
+
+
+
+
+
+/* Horizontale Hauptnavigation im Identitaetsbereich */
+
+
+
+/* Link auf die Fachbereichs-Praesenz */
+
+#baseFBHome {
+
+      position: absolute;
+
+      top: 76px;
+
+      left: 0;
+
+      background: #8ca3ba;
+
+      border-top: 1px solid #036;
+
+      border-bottom: 4px solid #036;
+
+      width: 196px;
+
+      height: 40px;
+
+      voice-family: "\"}\"";
+
+      voice-family: inherit;
+
+      height: 35px;
+
+}
+
+
+
+#baseFBHome img {
+
+      padding: 0;
+
+      margin: 0;
+
+}
+
+
+
+#baseNavigationButtons {
+
+      position: absolute;
+
+      top: 76px;
+
+    left: 196px;
+
+      margin: 0;
+
+      padding: 0;
+
+      text-align: left;
+
+      z-index: 1;
+
+      height: 35px;
+
+      font-weight:bold;
+
+      width: 584px;
+
+}
+
+
+
+#baseNavigationButtons ul {
+
+      list-style-type: none;
+
+      margin: 0;
+
+      padding: 0;
+
+      display: inline;
+
+}
+
+
+
+#baseNavigationButtons ul li {
+
+      display: inline;
+
+      margin: 0;
+
+      padding: 0;
+
+}
+
+
+
+#baseNavigationButtons ul li a {
+
+      display: block;
+
+      float:left;
+
+      padding: 16px 0 0 6px;
+
+    margin: 0;
+
+      text-decoration: none;
+
+      color: #fff;
+
+      background-color: #8ca3ba;
+
+      border-top: 1px solid #036;
+
+      border-left: 1px solid #036;
+
+      border-bottom: 4px solid #036;
+
+      height: 19px;
+
+      width: 116px;
+
+      voice-family: "\"}\"";
+
+      voice-family: inherit;
+
+      width: 109px;
+
+      overflow: hidden;
+
+}
+
+
+
+*html #baseNavigationButtons ul li a {
+
+      padding: 15px 0 1px 6px;
+
+}
+
+
+
+#baseNavigationButtons ul li a.lastButton {
+
+      border-right: 1px solid #036;
+
+      width: 119px;
+
+      voice-family: "\"}\"";
+
+      voice-family: inherit;
+
+      width: 112px;
+
+      overflow: hidden;
+
+}
+
+
+
+#baseNavigationButtons ul li a:hover {
+
+      color: #036;
+
+      background-color: #fff;
+
+}
+
+
+
+#baseNavigationButtons ul li .active {
+
+      display: block;
+
+      float:left;
+
+      padding: 16px 0 0 6px;
+
+    margin: 0;
+
+      text-decoration: none;
+
+      color: #036;
+
+      background-color: #fff;
+
+      border-top: 1px solid #036;
+
+      border-left: 1px solid #036;
+
+      border-bottom: 4px solid #036;
+
+      height: 19px;
+
+      width: 116px;
+
+      voice-family: "\"}\"";
+
+      voice-family: inherit;
+
+      width: 109px;
+
+      overflow: hidden;
+
+}
+
+
+
+#baseNavigationButtons ul li .activeLastButton {
+
+      display: block;
+
+      float:left;
+
+      padding: 16px 0 0 6px;
+
+    margin: 0;
+
+      text-decoration: none;
+
+      color: #036;
+
+      background-color: #fff;
+
+      border-top: 1px solid #036;
+
+      border-left: 1px solid #036;
+
+      border-right: 1px solid #036;
+
+      border-bottom: 4px solid #036;
+
+      height: 19px;
+
+      width: 119px;
+
+      voice-family: "\"}\"";
+
+      voice-family: inherit;
+
+      width: 112px;
+
+      overflow: hidden;
+
+}
+
+
+
+/* Banner unterhalb der Hauptnavigation links */
+
+
+
+#baseBannerContainer {
+
+      margin: 20px 0 0 22px;
+
+}
+
+
+
+/* Nennung des Arbeitsbereiches ueber der linken Navigation */
+
+.division {
+
+margin: 0 0 10px 22px;
+
+}
+
+
+
+.division a, .division a:visited {
+
+color: #666;
+
+}
+
+
+
+/*
+
+Spezielle Anweisungen fur die Positionierung von Bildern im Inhaltsbereich
+
+-------------------------------------------------------------------------------------------------------------
+
+*/
+
+
+
+
+
+.contentImagesRight {
+
+      float:right;
+
+        margin:6px 0px 8px 12px;
+
+}
+
+
+
+.contentImagesLeft {
+
+      float:left;
+
+      margin:6px 12px 8px 0px;
+
+}
+
+
+
+
+
+.contentImage300 img,.contentImage200 img,.contentImage150 img {
+
+      padding:1px;
+
+      border:1px solid #ccc;
+
+}
+
+
+
+.contentImage300 {
+
+      margin:0 0 12px 0;
+
+      background-color:#f4f4f4;
+
+      padding:4px;
+
+      width:304px;
+
+      overflow:hidden;
+
+}
+
+
+
+.contentImage300 h6 {
+
+      width:300px;
+
+      margin:4px 0 4px 0;
+
+}
+
+
+
+.contentImage200 {
+
+      margin:0 0 12px 0;
+
+      background-color:#f4f4f4;
+
+      padding:4px;
+
+      width:204px;
+
+      overflow:hidden;
+
+}
+
+
+
+.contentImage200 h6 {
+
+      width:200px;
+
+      margin:4px 0 4px 0;
+
+}
+
+
+
+.contentImage150 {
+
+      margin:0 0 12px 0;
+
+      background-color:#f4f4f4;
+
+      padding:4px;
+
+      width:154px;
+
+      overflow:hidden;
+
+}
+
+
+
+.contentImage150 h6 {
+
+      width:150px;
+
+      margin:4px 0 4px 0;
+
+}
+
+
+
+
